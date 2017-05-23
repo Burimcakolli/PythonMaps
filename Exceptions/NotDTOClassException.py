@@ -1,0 +1,2 @@
+class NotDTOClassException(Exception):
+    pass
