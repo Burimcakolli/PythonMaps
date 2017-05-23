@@ -9,7 +9,6 @@ class MapCallerTest(unittest.TestCase):
         locationName = LocationSearchDTO("Fachstrasse 28A 8942 Oberrieden")
         geoLocation = mapCaller.GetLocation(locationName)
         geoLocation = geoLocation[0]['geometry']['location']
-        # print(geoLocation['lat'], geoLocation['lng'])
 
         # Checks coordinates of = Fachstrasse 28A 8942 Oberrieden
         self.assertEqual(geoLocation['lat'], 47.27771389999999)
